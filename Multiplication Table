@@ -1,0 +1,5 @@
+def table(x, y):
+	i = 1
+	while y >= i:
+		print x, "*", i, "=", x * i
+		i += 1

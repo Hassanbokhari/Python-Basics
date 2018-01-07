@@ -1,0 +1,14 @@
+def add_number(x):
+     sum1 = 0
+     for i in range(0, 100):
+             b = x % 10
+             x = x / 10
+             sum1 += b
+             if x <= 0:
+                     if sum1 < 10:
+			     print sum1
+                             break
+                     else:
+                             x = sum1
+                             sum1 = 0
+			     continue

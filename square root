@@ -1,0 +1,30 @@
+def sqrt(x, guess = 0.0):
+	if x < 0.0000:
+	 return None
+	if good_enough(guess, x):
+	 return guess
+	else:
+	 new_guess = improve_guess(guess, x)
+	 return sqrt(x, new_guess)
+
+def good_enough(guess, x):
+	if abs(guess * guess - x) < 0.00001:
+	 return True
+	else:
+	 return False
+def average(guess, r):
+	a = ((guess + r) / 2.00000)
+	return a
+#### End OF MARKER
+
+
+#### YOUR CODE FOR improve_guess() FUNCTION GOES HERE ####
+def improve_guess(guess, n):
+	g = guess * 1.0000
+	x = n * 1.0000
+	if g < 1.00000:
+	 return g + 5.00000
+	else:
+	 ron = x / g
+	 return average(g, ron)
+#### End OF MARKER

@@ -1,0 +1,10 @@
+def fib(x):
+    a = 0
+    b = 1
+    y = [0, 1]
+    for i in range(0, x+1):
+        c = a + b
+        a = b
+        b = c
+        y.append(c)
+    print (y)

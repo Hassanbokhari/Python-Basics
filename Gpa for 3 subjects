@@ -1,0 +1,124 @@
+#### SGPA
+def get_grade(marks):
+
+	marks = round(marks)
+
+	if marks >= 90:
+		grade = 'A+'
+	elif marks >= 86:
+		grade = 'A'
+	elif marks >= 82:
+		grade = 'A-'
+	elif marks >= 78:
+		grade = 'B+'
+	elif marks >= 74:
+		grade = 'B'
+	elif marks >= 70:
+		grade = 'B-'
+	elif marks >= 66:
+		grade = 'C+'
+	elif marks >= 62:
+		grade = 'C'
+	elif marks >= 58:
+		grade = 'C-'
+	elif marks >= 54:
+		grade = 'D+'
+	elif marks >= 50:
+		grade = 'D'
+	else:
+		grade = 'F'
+
+	return grade
+		
+#### End OF MARKER
+
+#### YOUR CODE FOR calculate_sgpa() FUNCTION GOES HERE ####
+def calculate_sgpa(a, b, c):
+	subject=0
+	total = 0.00
+	if(a != 'nothing'):
+		subject= subject + 1
+		if(a == 'A+'):
+			total=total + 4.00
+		elif(a == 'A'):
+			total=total + 4.00
+		elif(a == 'A-'):
+			total=total + 3.67
+		elif(a == 'B+'):
+			total=total + 3.33
+		elif(a == 'B'):
+			total=total + 3.00
+		elif(a == 'B-'):
+			total=total + 2.67
+		elif(a == 'C+'):
+			total=total + 2.33
+		elif(a == 'C'):
+			total=total + 2.00
+		elif(a == 'C-'):
+			total=total + 1.67
+		elif(a == 'D+'):
+			total=total + 1.33
+		elif(a == 'D'):
+			total=total + 1.00
+		else:
+			total=total + 0
+		##print total
+	if(b != 'nothing'):
+		subject= subject + 1
+		if(b == 'A+'):
+			total=total + 4.00
+		elif(b == 'A'):
+			total=total + 4.00
+		elif(b == 'A-'):
+			total=total + 3.67
+		elif(b == 'B+'):
+			total=total + 3.33
+		elif(b == 'B'):
+			total=total + 3.00
+		elif(b == 'B-'):
+			total=total + 2.67
+		elif(b == 'C+'):
+			total=total + 2.33
+		elif(b == 'C'):
+			total=total + 2.00
+		elif(b == 'C-'):
+			total=total + 1.67
+		elif(b == 'D+'):
+			total=total + 1.33
+		elif(b == 'D'):
+			total=total + 1.00
+		else:
+			total=total + 0
+		##print total
+	if(c != 'nothing'):
+		subject= subject + 1
+		if(c == 'A+'):
+			total=total + 4.00
+		elif(c == 'A'):
+			total=total + 4.00
+		elif(c == 'A-'):
+			total=total + 3.67
+		elif(c == 'B+'):
+			total=total + 3.33
+		elif(c == 'B'):
+			total=total + 3.00
+		elif(c == 'B-'):
+			total=total + 2.67
+		elif(c == 'C+'):
+			total=total + 2.33
+		elif(c == 'C'):
+			total=total + 2.00
+		elif(c == 'C-'):
+			total=total + 1.67
+		elif(c == 'D+'):
+			total=total + 1.33
+		elif(c == 'D'):
+			total=total + 1.00
+		else:
+			total=total + 0
+	if(a== 'nothing' and b== 'nothing' and c== 'nothing'):
+		return 0.00
+	
+	sgpa= total / subject
+	return sgpa
+
